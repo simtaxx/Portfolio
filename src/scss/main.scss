@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: GothamLight;
+  padding: 0 15px 0 15px;
+}
+h1 {
+  font-family: GothamLight;
+  font-size: 36px;
+
+  span {
+    font-family: GothamRegular;
+  }
+}
+h2 {
+  font-family: GothamLight;
+  font-size: 20px;
+
+  span {
+    font-family: GothamRegular;
+  }
+}
+article {
+  line-height: 18px;
+  font-size: 18px;
+  span {
+    font-family: GothamRegular;
+  }
+}
