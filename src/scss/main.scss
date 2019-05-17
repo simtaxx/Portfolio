@@ -57,13 +57,20 @@ article {
   }
 }
 .contact {
-  text-align: center;
   background-color: white;
   color: black;
   font-family: Gotham;
-  width: 24px;
+  width: 100px;
   height: 126x;
   position: fixed;
   top: 20vh;
-  right: 0;
+  right: -70px;
+  animation: closeContact 1s forwards;
+
+  p {
+    margin-left: 8px;
+  }
+}
+.open {
+  animation: openContact 1s forwards;
 }
