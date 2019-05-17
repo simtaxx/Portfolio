@@ -11,7 +11,7 @@ main {
   height: 100vh;
 }
 h1 {
-  margin-top: 30px;
+  margin-top: 8vh;
   font-family: GothamLight;
   font-size: 34px;
 
@@ -22,7 +22,7 @@ h1 {
 h2 {
   font-family: GothamLight;
   font-size: 26px;
-  margin-top: 10px;
+  margin-top: 2vh;
   span {
     font-family: GothamRegular;
   }
@@ -30,8 +30,9 @@ h2 {
 article {
   line-height: 22px;
   font-size: 18px;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  height: 60vh;
   span {
     font-family: GothamRegular;
   }
@@ -40,6 +41,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 0%;
   .down_arrow__img {
     width: 50px;
     animation: 2.5s infinite;
