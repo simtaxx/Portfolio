@@ -16,5 +16,9 @@
   "devDependencies": {
     "parcel-bundler": "^1.10.3",
     "sass": "^1.15.1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.3.0",
+    "swiper": "^4.5.0"
   }
 }
