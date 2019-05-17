@@ -65,12 +65,12 @@ article {
   position: fixed;
   top: 20vh;
   right: -70px;
-  animation: closeContact 1s forwards;
+  transition: 1s;
 
   p {
     margin-left: 8px;
   }
 }
 .open {
-  animation: openContact 1s forwards;
+  transform: translateX(-70px);
 }
