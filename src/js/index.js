@@ -10,3 +10,15 @@ body.addEventListener("click", () => {
 body2.addEventListener("click", () => {
   contactButton.classList.remove("open");
 });
+let string = `
+Je suis actuellement étudiant à HETIC en
+Bachelor Web. Mon objectif et de réussir mes études
+et de pouvoir évoluer tout en continuant à aimer ce que je fais!
+Je suis à la recherche d'un stage de 3 mois en tant 
+que développeur front du 1er juillet au 20 septembre.`;
+var str = string.split("");
+var el = document.getElementById("str");
+(function animate() {
+  str.length > 0 ? (el.innerHTML += str.shift()) : clearTimeout(running);
+  var running = setTimeout(animate, 30);
+})();
