@@ -8,7 +8,7 @@
     }
   }
   .header {
-    width: 10vw;
+    width: 140px;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -40,6 +40,23 @@
     }
   }
   article {
-    padding: 0 10vw 0 10vw;
+    width: 40vw;
+    height: 70vh;
+    padding: 0 3vw 0 3vw;
+    border: solid;
+    margin-left: 200px;
+    margin-top: 130px;
+  }
+  .mypicture {
+    position: absolute;
+    top: 50px;
+    right: 180px;
+    display: flex;
+    border: solid;
+    width: 35vw;
+    height: 620px;
+  }
+  .down_arrow {
+    display: none;
   }
 }
