@@ -20,5 +20,5 @@ let str = string.split("");
 let el = document.getElementById("str");
 (function animate() {
   str.length > 0 ? (el.innerHTML += str.shift()) : clearTimeout(running);
-  let running = setTimeout(animate, 30);
+  let running = setTimeout(animate, 25);
 })();

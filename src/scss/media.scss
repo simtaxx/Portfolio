@@ -26,7 +26,10 @@
         margin-right: 65px;
         width: 120px;
       }
-
+      a {
+        text-decoration: none;
+        color: white;
+      }
       li {
         padding-right: 30px;
         padding-top: 50px;
@@ -97,5 +100,8 @@
       width: 70%;
       padding-bottom: 30px;
     }
+  }
+  .mailselect {
+    display: none;
   }
 }
