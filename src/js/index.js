@@ -22,3 +22,19 @@ let el = document.getElementById("str");
   str.length > 0 ? (el.innerHTML += str.shift()) : clearTimeout(running);
   let running = setTimeout(animate, 25);
 })();
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", e => {
+  cursor.setAttribute(
+    "style",
+    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+  );
+});
+
+document.addEventListener("click", () => {
+  cursor.classList.add("expand");
+
+  setTimeout(() => {
+    cursor.classList.remove("expand");
+  }, 500);
+});
