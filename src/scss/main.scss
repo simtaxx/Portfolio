@@ -5,7 +5,10 @@ body {
   background-color: black;
   color: white;
   font-family: GothamLight;
-  padding: 0 15px 0 15px;
+  padding: 0 25px 0 25px;
+}
+.cursor {
+  display: none;
 }
 main {
   height: 100vh;
@@ -73,7 +76,6 @@ article {
 }
 .contact {
   background-color: white;
-  color: black;
   font-family: Gotham;
   width: 100px;
   height: 70px;
@@ -81,13 +83,14 @@ article {
   top: 18vh;
   right: -70px;
   transition: 0.6s;
-
   p {
-    margin-left: 8px;
+    color: white;
+    font-size: 16px;
+    margin-right: 65px;
+    margin-top: 0px;
   }
   div {
-    margin-left: 8px;
-    color: white;
+    color: black;
   }
   img {
     width: 50px;
