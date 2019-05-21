@@ -100,8 +100,7 @@
   .projects {
     margin-left: 150px;
     img {
-      width: 70%;
-      padding-bottom: 30px;
+      display: none;
     }
   }
   .mailselect {
@@ -122,10 +121,24 @@
     grid-column-end: 4;
   }
   .slide {
-    background-color: red;
     grid-column-start: 1 2 3;
     grid-row-start: 2;
-    border: solid;
+    border: solid red;
+  }
+  .slide:nth-child(2) {
+    background-image: url("/pictures/santa_rush.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide:nth-child(3) {
+    background-image: url("/pictures/rayan.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide:nth-child(4) {
+    background-image: url("/pictures/quickzik.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

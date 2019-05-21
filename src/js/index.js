@@ -1,3 +1,5 @@
+import { url } from "inspector";
+
 let contactButton = document.querySelector(".contact");
 let body = document.querySelector(".projects");
 let body2 = document.querySelector("main");
@@ -38,3 +40,8 @@ document.addEventListener("click", () => {
     cursor.classList.remove("expand");
   }, 500);
 });
+let firstSlide = document.querySelector(".slide:nth-child(2)");
+let secondSlide = document.querySelector(".slide:nth-child(3)");
+let thirdSlide = document.querySelector(".slide:nth-child(4)");
+let firstBg = require("../pictures/santa_rush.png");
+console.log(firstBg);
