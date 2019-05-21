@@ -108,3 +108,35 @@
     display: none;
   }
 }
+.slider {
+  background-color: white;
+  width: 70vw;
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 70% 30%;
+  grid-template-columns: 33.5% 33.3% 33.3%;
+
+  .main-slide {
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .slide {
+    background-color: red;
+    grid-column-start: 1 2 3;
+    grid-row-start: 2;
+    border: solid;
+  }
+}
+
+/*.main-slide {
+  background-color: aqua;
+  width: 96%;
+  height: 73%;
+}
+
+.slide {
+  background-color: red;
+  width: 33vw;
+  height: 25vh;
+}*/
