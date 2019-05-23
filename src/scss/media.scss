@@ -106,39 +106,62 @@
   .mailselect {
     display: none;
   }
-}
-.slider {
-  background-color: white;
-  width: 70vw;
-  height: 80vh;
-  display: grid;
-  grid-template-rows: 70% 30%;
-  grid-template-columns: 33.5% 33.3% 33.3%;
+  .slider {
+    background-color: white;
+    width: 70vw;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 33.5% 33.3% 33.3%;
 
-  .main-slide {
-    background-color: blue;
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-  .slide {
-    grid-column-start: 1 2 3;
-    grid-row-start: 2;
-    border: solid red;
-  }
-  .slide:nth-child(2) {
-    background-image: url("/pictures/santa_rush.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .slide:nth-child(3) {
-    background-image: url("/pictures/rayan.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .slide:nth-child(4) {
-    background-image: url("/pictures/quickzik.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    .main-slide {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    .slide {
+      grid-column-start: 1 2 3;
+      grid-row-start: 2;
+      border: solid red;
+    }
+    .slide:nth-child(2) {
+      background-image: url("/pictures/santa_rush.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .slide:nth-child(3) {
+      background-image: url("/pictures/rayan.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .slide:nth-child(4) {
+      background-image: url("/pictures/quickzik.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .firstBg {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      border: solid red;
+      background-image: url("/pictures/santa_rush.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .secondBg {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      border: solid red;
+      background-image: url("/pictures/rayan.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .thirdBg {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      border: solid red;
+      background-image: url("/pictures/quickzik.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 

@@ -38,7 +38,34 @@ document.addEventListener("click", () => {
     cursor.classList.remove("expand");
   }, 500);
 });
+let mainSlide = document.querySelector(".main-slide");
 let firstSlide = document.querySelector(".slide:nth-child(2)");
 let secondSlide = document.querySelector(".slide:nth-child(3)");
 let thirdSlide = document.querySelector(".slide:nth-child(4)");
-let firstBg = require("../pictures/santa_rush.png");
+let firstBg = document.querySelector("firstBg");
+let secondBg = document.querySelector("secondBg");
+let thirdBg = document.querySelector("thirdBg");
+
+/*function showMore(slide, bg) {
+  slide.addEventListener("click", () => {
+    mainSlide.classList.remove("slide", "firstBg", "secondBg", "thirdBg");
+    mainSlide.className = `${bg}`;
+    console.log(mainSlide);
+  });
+}
+showMore(firstSlide, firstBg);
+showMore(secondSlide, secondBg);
+showMore(thirdSlide, thirdBg);*/
+
+firstSlide.addEventListener("click", () => {
+  mainSlide.classList.remove("slide", "firstBg", "secondBg", "thirdBg");
+  mainSlide.className = "firstBg";
+});
+secondSlide.addEventListener("click", () => {
+  mainSlide.classList.remove("slide", "firstBg", "secondBg", "thirdBg");
+  mainSlide.className = "secondBg";
+});
+thirdSlide.addEventListener("click", () => {
+  mainSlide.classList.remove("slide", "firstBg", "secondBg", "thirdBg");
+  mainSlide.className = "thirdBg";
+});
