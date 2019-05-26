@@ -42,30 +42,16 @@ let mainSlide = document.querySelector(".main-slide");
 let firstSlide = document.querySelector(".slide:nth-child(2)");
 let secondSlide = document.querySelector(".slide:nth-child(3)");
 let thirdSlide = document.querySelector(".slide:nth-child(4)");
-let firstBg = document.querySelector("firstBg");
-let secondBg = document.querySelector("secondBg");
-let thirdBg = document.querySelector("thirdBg");
-
-/*function showMore(slide, bg) {
+let firstBg = "firstBg";
+let secondBg = "secondBg";
+let thirdBg = "thirdBg";
+function showMore(slide, bg) {
   slide.addEventListener("click", () => {
     mainSlide.classList.remove("slide", "firstBg", "secondBg", "thirdBg");
-    mainSlide.className = `${bg}`;
-    console.log(mainSlide);
+    mainSlide.classList.add(bg);
+    console.log(firstBg);
   });
 }
 showMore(firstSlide, firstBg);
 showMore(secondSlide, secondBg);
-showMore(thirdSlide, thirdBg);*/
-
-firstSlide.addEventListener("click", () => {
-  mainSlide.classList.remove("slide", "firstBg", "secondBg", "thirdBg");
-  mainSlide.className = "firstBg";
-});
-secondSlide.addEventListener("click", () => {
-  mainSlide.classList.remove("slide", "firstBg", "secondBg", "thirdBg");
-  mainSlide.className = "secondBg";
-});
-thirdSlide.addEventListener("click", () => {
-  mainSlide.classList.remove("slide", "firstBg", "secondBg", "thirdBg");
-  mainSlide.className = "thirdBg";
-});
+showMore(thirdSlide, thirdBg);
